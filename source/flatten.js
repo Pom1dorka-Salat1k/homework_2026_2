@@ -12,7 +12,7 @@
 
 const flatten = array => {
     if (!Array.isArray(array)) {
-        throw new TypeError("Ожидался массив");
+        throw new TypeError("В качестве входного параметра передан неправильный тип, ожидается массив");
     }
 
     return array.reduce(
