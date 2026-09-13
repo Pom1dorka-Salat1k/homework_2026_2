@@ -1,12 +1,12 @@
 /**
  * Преобразует вложенный массив в плоский
  *
- * @param {Array} array - вложенный массив
- * 
- *  * @example
+ * @param {Array} array Вложенный массив
+ * @returns {Array} Плоский массив без вложенных массивов
+ *
+ * @example
  * // returns [1, 2, 3]
  * flatten([1, [2, 3]]);
- * 
  * @returns {Array}
  */
 const flatten = array => {
