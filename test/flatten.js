@@ -65,5 +65,3 @@ QUnit.module("Тестируем функцию flatten", function() {
         assert.deepEqual(result, []);
     });
 });
-
-
