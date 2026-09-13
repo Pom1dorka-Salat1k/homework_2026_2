@@ -2,14 +2,13 @@
  * Преобразует вложенный массив в плоский
  *
  * @param {Array} array Вложенный массив
- * @returns {Array} Плоский массив без вложенных массивов
  *
  * @example
  * // returns [1, 2, 3]
  * flatten([1, [2, 3]]);
- * @returns {Array}
+ * 
+ * @returns {Array} Плоский массив без вложенных массивов
  */
-
 const flatten = array => {
     if (!Array.isArray(array)) {
         throw new TypeError("В качестве входного параметра передан неправильный тип, ожидается массив");
