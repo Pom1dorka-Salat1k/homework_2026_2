@@ -9,7 +9,12 @@
  * flatten([1, [2, 3]]);
  * @returns {Array}
  */
+
 const flatten = array => {
+    if (!Array.isArray(array)) {
+        throw new TypeError("Ожидался массив");
+    }
+
     return array.reduce(
         (result, item) =>
             result.concat(Array.isArray(item) ? flatten(item) : item),
